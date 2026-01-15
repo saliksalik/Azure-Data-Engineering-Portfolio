@@ -1,7 +1,8 @@
 # Azure Data Engineering Portfolio ☁️
 
-**Author:** [Your Name]
-**Focus:** DP-203, Microsoft Fabric, Databricks
+**Author:** Salik Ahmad
+**Focus:** DP-203, Microsoft Fabric, Databricks,Synapse,DP-700,Devops,DevSysOps,DataLake,Data Facory
+
 
 ## 🚀 About This Repository
 This repository documents my hands-on journey to becoming an Azure Data Engineer. It contains code, lab notes, and architectural diagrams from the **DP-203** and **Microsoft Fabric** curriculums.
