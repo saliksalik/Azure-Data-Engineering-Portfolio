@@ -1,0 +1,11 @@
+ProductID,ProductName,Category,ListPrice
+1,Mountain-100 Silver,Bikes,3399.99
+2,Mountain-100 Black,Bikes,3374.99
+3,Road-150 Red,Bikes,3578.27
+4,Touring-1000 Blue,Bikes,2384.07
+5,HL Mountain Tire,Components,35.00
+6,LL Road Tire,Components,21.49
+7,ML Mountain Tire,Components,24.99
+8,Long-Sleeve Logo Jersey,Clothing,49.99
+9,Short-Sleeve Classic Jersey,Clothing,53.99
+10,Racing Socks,Clothing,8.99
