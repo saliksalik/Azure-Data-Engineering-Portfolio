@@ -36,6 +36,5 @@
 ![we create an external file format called QuotedCsvWithHeader](we%20create%20an%20external%20file%20format%20called%20QuotedCsvWithHeader.png)
 ![query results, select the Chart view](query%20results,%20select%20the%20Chart%20view.png)
 
----
 
-*Attach relevant screenshots and SQL scripts here as you complete the lab.*
+
