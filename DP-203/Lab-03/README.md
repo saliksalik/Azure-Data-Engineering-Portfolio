@@ -45,16 +45,16 @@ In this lab, I worked with files stored in the data lake and external file sourc
 
 ### Task 4: Create a view with a serverless SQL pool
 - Created a view to wrap a SQL query for easier access and integration with tools like Power BI.
-![image 13](image13.png)
+
 - Ran the script and verified the results.
-![image 14](image14.png)
+
 - Updated the script to use FIRSTROW=2 and selected from the view.
-![image 15](image15.png)
+
 - Ensured demo database is selected and ran the script.
-![image 16](image16.png)
+
 - Refreshed the workspace and expanded the demo SQL database.
-![image 17](image17.png)
-![image 18](image18.png)
+
+
 
 ---
 
@@ -62,38 +62,23 @@ In this lab, I worked with files stored in the data lake and external file sourc
 
 ### Task 1: Create Azure Active Directory security groups
 - Created security groups for history owners, readers, current writers, and 2019 writers.
-![image 19](image19.png)
-![image 20](image20.png)
-![image 21](image21.png)
+
 
 ### Task 2: Add group members
 - Added my account and other groups as members to the security groups.
-![image 22](image22.png)
-![image 23](image23.png)
-![image 24](image24.png)
+
 
 ### Task 3: Configure data lake security - RBAC
 - Assigned Storage Blob Data Reader and Owner roles to the security groups.
-![image 25](image25.png)
-![image 26](image26.png)
-![image 27](image27.png)
-![image 28](image28.png)
-![image 29](image29.png)
+
 
 ### Task 4: Configure data lake security - ACLs
 - Set ACLs for the Year=2019 folder to control access and permissions.
-![image 30](image30.png)
+
 
 ### Task 5: Test permissions
 - Tested read and write permissions using SQL and Spark notebooks.
-![image 31](image31.png)
-![image 32](image32.png)
-![image 33](image33.png)
-![image 34](image34.png)
-![image 35](image35.png)
-![image 36](image36.png)
-![image 37](image37.png)
-![image 38](image38.png)
+
 
 ---
 
