@@ -10,7 +10,7 @@ A single-node cluster named `cluster-salik` was deployed using 17.3 LTS (Spark 3
 
 **Screenshots:**
 ![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/9d93745e0941f8786c08199660e79e0a137db91d/DP-203/Lab-04/%231.png)
-![Data generation code]((https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/dc8d6915cf94a20bbe08bb45b8d35c34db0fb272/DP-203/Lab-04/%232.png))
+![imaeg alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/dc8d6915cf94a20bbe08bb45b8d35c34db0fb272/DP-203/Lab-04/%232.png)
 
 ---
 
