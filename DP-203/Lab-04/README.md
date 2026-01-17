@@ -35,7 +35,7 @@ To prepare the data for reporting, the following transformations were applied:
 - **Renaming:** Updated the Revenue column to Amount_USD for clarity.
 
 **Screenshot:**
-![Code fix and updated schema](#6.png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/42d6bc649039c24ccb4da03aa941663eeebb72eb/DP-203/Lab-04/%236.png)
 
 ---
 
@@ -46,7 +46,7 @@ The final stage involved grouping the sales data by Product and calculating the 
 - **Widget A:** Correctly aggregated to 30 from multiple smaller transactions.
 
 **Screenshot:**
-![Final grouped output](#7.png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/42d6bc649039c24ccb4da03aa941663eeebb72eb/DP-203/Lab-04/%237.png)
 
 ---
 
@@ -54,4 +54,4 @@ The final stage involved grouping the sales data by Product and calculating the 
 The lab was concluded by manually terminating the compute cluster to prevent unnecessary Azure credit consumption.
 
 **Screenshot:**
-![Cluster shutdown confirmation](#7.png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/2f6219b67e8e441221dacdc9caa2411fb20f5cb0/DP-203/Lab-04/%238.png)
