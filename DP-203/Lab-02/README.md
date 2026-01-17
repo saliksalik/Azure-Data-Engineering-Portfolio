@@ -4,7 +4,7 @@
 - Verified the structure and permissions of the Data Lake Storage Gen2 account.
 - Ensured the /users/data/ directory contains the required product.csv dataset.
 
-![Data hub, select the Workspace tab](Data%20hub,%20select%20the%20Workspace%20tab.png)
+![Workspace Databases Overview](workspace-databases-overview.jpg)
 
 ## Phase 2: Serverless SQL Pool Setup
 - Connected to the Built-in Serverless SQL Pool in Synapse Studio.
