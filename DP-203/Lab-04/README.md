@@ -22,8 +22,8 @@ The data was loaded into Spark DataFrames with inferSchema enabled.
 
 **Screenshots:**
 ![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/ed1d57257786aca90c564c987c91c329ceb1e78a/DP-203/Lab-04/%233.png)
-![image alt]()
-![image alt]()
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/16248594ce4288a0f839d69c11ca3d1e7e7c1c06/DP-203/Lab-04/%234.png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/16248594ce4288a0f839d69c11ca3d1e7e7c1c06/DP-203/Lab-04/%235.png)
 
 ---
 
