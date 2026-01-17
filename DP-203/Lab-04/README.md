@@ -9,7 +9,7 @@ The objective of this lab was to utilize Apache Spark to process raw datasets, f
 A single-node cluster named `cluster-salik` was deployed using 17.3 LTS (Spark 3.5.0). Due to the original lab files being archived, synthetic datasets for articles and sales were generated via a Python script and stored in a secure workspace directory.
 
 **Screenshots:**
-![Cluster configuration](#1.png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/9d93745e0941f8786c08199660e79e0a137db91d/DP-203/Lab-04/%231.png)
 ![Data generation code](#2.png)
 
 ---
