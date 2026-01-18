@@ -86,16 +86,12 @@ In this lab, I simulated a complete Data Engineering workflow using Azure Synaps
 ## Step 6: Complex JSON Transformation
 - Handled nested JSON data where user purchases were stored as arrays:
 	- Used the explode function to flatten the hierarchy.
-![JSON Flattening Logic](13 Nested Flattened.png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/57b60cfda9250228ded621d0e9705efa45f76214/DP-203/Lab-05/13%20Nested%20Flattened.png)
 *Figure 17: The PySpark code and result showing Visitor 9529082 split into multiple rows.*
 
-- Verified the final output to ensure every product purchase was listed as its own unique record.
-![Final JSON Table](image_b35db8.png)
-*Figure 18: The final flattened table ready for analysis.*
 
----
 
 ## Step 7: Resource Management
 - Stopped the Spark Session to release compute resources and optimize costs.
-![Stop Session](Stop Session.png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/57b60cfda9250228ded621d0e9705efa45f76214/DP-203/Lab-05/Stop%20Session.png)
 *Figure 19: Stopping the session to complete the lab.*
