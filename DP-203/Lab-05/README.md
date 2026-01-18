@@ -1,6 +1,6 @@
 # Lab 05: Data Engineering with Azure Synapse and PySpark
 
-## Project Overview
+## Lab Overview
 In this lab, I simulated a complete Data Engineering workflow using Azure Synapse Analytics. The goal was to manage the lifecycle of big data: generating raw datasets, inspecting quality, fixing corrupted files programmatically, and transforming nested structures for analysis.
 
 ---
