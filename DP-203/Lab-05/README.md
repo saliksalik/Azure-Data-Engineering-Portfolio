@@ -28,15 +28,15 @@ In this lab, I simulated a complete Data Engineering workflow using Azure Synaps
 
 ## Step 3: Data Quality Inspection
 - Manually inspected multiple partitions of valid sales data to ensure correct formatting.
-![Good Data Preview 1](sale-20170501.csv(good datafile 1).png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/bee3fd138c478c68ebe5d39d73fd8a9535a0e24d/DP-203/Lab-05/sale-20170501.csv(good%20datafile%201).png)
 *Figure 4: Inspecting the first partition of the valid CSV file.*
-![Good Data Preview 2](sale-20170501.csv(good datafile 2).png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/bee3fd138c478c68ebe5d39d73fd8a9535a0e24d/DP-203/Lab-05/sale-20170501.csv(good%20datafile%202).png)
 *Figure 5: Inspecting the second partition to confirm consistency.*
-![Good Data Preview 3](sale-20170501.csv(good datafile 3).png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/bee3fd138c478c68ebe5d39d73fd8a9535a0e24d/DP-203/Lab-05/sale-20170501.csv(good%20datafile%203).png)
 *Figure 6: Inspecting the third partition. All healthy files displayed correct columnar structure.*
 
 - Previewed the file sale-20170502.csv and confirmed it was corrupted (missing newline characters).
-![Bad Data Error](sale-20170502.csv(bad datafile 1).png)
+![image alt](https://github.com/saliksalik/Azure-Data-Engineering-Portfolio/blob/bee3fd138c478c68ebe5d39d73fd8a9535a0e24d/DP-203/Lab-05/sale-20170502.csv(bad%20datafile%201).png)
 *Figure 7: The system fails to parse the corrupted CSV file, indicating the need for a programmatic fix.*
 
 ---
