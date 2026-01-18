@@ -9,8 +9,8 @@ The objective of this lab was to utilize Apache Spark to process raw datasets, f
 A single-node cluster named `cluster-salik` was deployed using 17.3 LTS (Spark 3.5.0). Due to the original lab files being archived, synthetic datasets for articles and sales were generated via a Python script and stored in a secure workspace directory.
 
 **Screenshots:**
-![Cluster configuration](image_429e44.png)
-![Data generation code](image_43162d.png)
+![Cluster configuration](#1.png)
+![Data generation code](#2.png)
 
 ---
 
@@ -21,8 +21,9 @@ The data was loaded into Spark DataFrames with inferSchema enabled.
 - **Filtering:** Successfully isolated articles authored by "Databricks".
 
 **Screenshots:**
-![Initial messy data (6 rows)](image_437422.png)
-![Basic filtering](image_43f440.png)
+![Initial messy data (6 rows)](#3.png)
+![Basic filtering](#4.png)
+![Articles count and filtering](#5.png)
 
 ---
 
@@ -34,7 +35,7 @@ To prepare the data for reporting, the following transformations were applied:
 - **Renaming:** Updated the Revenue column to Amount_USD for clarity.
 
 **Screenshot:**
-![Code fix and updated schema](image_46aa77.png)
+![Code fix and updated schema](#6.png)
 
 ---
 
@@ -45,7 +46,7 @@ The final stage involved grouping the sales data by Product and calculating the 
 - **Widget A:** Correctly aggregated to 30 from multiple smaller transactions.
 
 **Screenshot:**
-![Final grouped output](image_46bc84.png)
+![Final grouped output](#7.png)
 
 ---
 
@@ -53,4 +54,4 @@ The final stage involved grouping the sales data by Product and calculating the 
 The lab was concluded by manually terminating the compute cluster to prevent unnecessary Azure credit consumption.
 
 **Screenshot:**
-![Cluster shutdown confirmation](image_509b60.png)
+![Cluster shutdown confirmation](#7.png)
