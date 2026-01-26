@@ -1,4 +1,4 @@
-# Lab 07: Transform data with Azure Data Factory or Azure Synapse Pipelines 🚀
+# Lab 07: Transform data with Azure Data Factory or Azure Synapse Pipelines
 
 This lab teaches you how to build data integration pipelines to ingest from multiple data sources, transform data using mapping data flows and notebooks, and perform data movement into one or more data sinks.
 
@@ -8,7 +8,7 @@ After completing this lab, you will be able to:
 - Create data pipeline to import poorly formatted CSV files
 - Create Mapping Data Flows
 
-## Lab Setup and Pre-requisites 🛠️
+## Lab Setup and Pre-requisites
 
 Before starting this lab, you must complete Lab 5: Ingest and load data into the Data Warehouse.
 
@@ -23,7 +23,7 @@ Continue to the next exercise while the dedicated SQL pool resumes.
 
 **Important:** Once started, a dedicated SQL pool consumes credits in your Azure subscription until it is paused. If you take a break from this lab, or decide not to complete it; follow the instructions at the end of the lab to pause your SQL pool!
 
-## Exercise 1: Code-free transformation at scale with Azure Synapse Pipelines 🔄
+## Exercise 1: Code-free transformation at scale with Azure Synapse Pipelines
 
 Tailwind Traders would like code-free options for data engineering tasks. Their motivation is driven by the desire to allow junior-level data engineers who understand the data but do not have a lot of development experience build and maintain data transformation operations. The other driver for this requirement is to reduce fragility caused by complex code with reliance on libraries pinned to specific versions, remove code testing requirements, and improve ease of long-term maintenance.
 
@@ -40,7 +40,7 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
 - Flexibility to transform data per user's comfort
 - Monitor and manage data flows from a single pane of glass
 
-### Task 1: Create SQL table 📊
+### Task 1: Create SQL table
 
 The Mapping Data Flow we will build will write user purchase data to a dedicated SQL pool. Tailwind Traders does not yet have a table to store this data. We will execute a SQL script to create this table as a pre-requisite.
 
@@ -54,7 +54,7 @@ I navigated to the Develop hub in Synapse Analytics Studio. In the + menu, I sel
 ![Table 1 Success](Lab7_Ex1_Task1_Table1_Success.png)
 ![Table 2 Success](Lab7_Ex1_Task1_Table2_Success.png)
 
-### Task 2: Create linked service 🔗
+### Task 2: Create linked service
 
 Azure Cosmos DB is one of the data sources that will be used in the Mapping Data Flow. Tailwind Traders has not yet created the linked service.
 
@@ -62,7 +62,7 @@ Azure Cosmos DB is one of the data sources that will be used in the Mapping Data
 
 I navigated to the Manage hub. I opened Linked services and selected + New. I selected Azure Cosmos DB (SQL API), named it asacosmosdb01, selected the Cosmos DB account and CustomerProfile database, tested the connection, and created it.
 
-### Task 3: Create data sets 📁
+### Task 3: Create data sets
 
 User profile data comes from two different data sources. I created datasets for the SQL tables and sources.
 
@@ -70,7 +70,7 @@ User profile data comes from two different data sources. I created datasets for 
 
 I went to the Data hub. For each dataset, I selected + Integration dataset, chose the appropriate type (Cosmos DB, ADLS Gen2, Azure Synapse Analytics), configured the settings as specified, and created them. I previewed the Cosmos DB data to verify.
 
-### Task 4: Create campaign analytics dataset 📈
+### Task 4: Create campaign analytics dataset
 
 I created a dataset for the poorly formatted CSV file.
 
@@ -81,7 +81,7 @@ In the Data hub, I selected + Integration dataset, chose Azure Data Lake Storage
 **Screenshot:**
 ![CSV Preview](Screenshot%202026-01-25%20135656.png)
 
-### Task 5: Create campaign analytics data flow 🌊
+### Task 5: Create campaign analytics data flow
 
 I created a Mapping Data Flow to transform the campaign analytics data.
 
@@ -89,7 +89,7 @@ I created a Mapping Data Flow to transform the campaign analytics data.
 
 I navigated to the Develop hub, selected + Data flow, named it asal400_lab2_writecampaignanalyticstoasa. I added a source with the campaign analytics dataset, configured options including skip line count 1. I used the script to set the schema. Then I added Select, Derived Column, another Select, and Sink transformations as specified, configuring each step with the required mappings and expressions. Finally, I published the data flow.
 
-### Task 6: Create campaign analytics data pipeline 🔧
+### Task 6: Create campaign analytics data pipeline
 
 I created a pipeline to run the data flow.
 
@@ -97,7 +97,7 @@ I created a pipeline to run the data flow.
 
 I went to the Integrate hub, selected + Pipeline, named it "Write Campaign Analytics to ASA". I dragged a Data flow activity, named it, selected the data flow, and published the pipeline.
 
-### Task 7: Run the campaign analytics data pipeline ▶️
+### Task 7: Run the campaign analytics data pipeline
 
 I triggered and monitored the pipeline run.
 
@@ -105,7 +105,7 @@ I triggered and monitored the pipeline run.
 
 I selected Add trigger > Trigger now, confirmed, then monitored in the Monitor hub until it completed successfully.
 
-### Task 8: View campaign analytics table contents 👀
+### Task 8: View campaign analytics table contents
 
 I verified the data in the SQL table.
 
@@ -113,11 +113,11 @@ I verified the data in the SQL table.
 
 In the Data hub, I expanded the database, right-clicked the table, selected New SQL script > Select TOP 100 rows. I ran additional queries and viewed the chart.
 
-## Exercise 2: Create Mapping Data Flow for top product purchases 🛒
+## Exercise 2: Create Mapping Data Flow for top product purchases
 
 Tailwind Traders needs to combine top product purchases with user preferred products. I built a mapping data flow for this.
 
-### Task 1: Create Mapping Data Flow 🌊
+### Task 1: Create Mapping Data Flow
 
 I created the data flow for user profiles.
 
@@ -125,11 +125,11 @@ I created the data flow for user profiles.
 
 In the Develop hub, I selected + Data flow, named it write_user_profile_to_asa. I added sources for e-commerce user profiles and Cosmos DB, configured them. I added Derived Column, Flatten, Join, another Derived Column, Filter, and two Sinks (one for SQL pool, one for data lake), configuring each with the specified settings, mappings, and optimizations. I published the data flow.
 
-## Exercise 3: Orchestrate data movement and transformation in Azure Synapse Pipelines 🎼
+## Exercise 3: Orchestrate data movement and transformation in Azure Synapse Pipelines
 
 Tailwind Traders wants to orchestrate data activities.
 
-### Task 1: Create pipeline 🔧
+### Task 1: Create pipeline
 
 I created a pipeline for the user profile data flow.
 
@@ -137,7 +137,7 @@ I created a pipeline for the user profile data flow.
 
 In the Integrate hub, I selected + Pipeline, named it "Write User Profile Data to ASA". I added a Data flow activity, configured it with the data flow, staging options, and published.
 
-### Task 2: Trigger, monitor, and analyze the user profile data pipeline 📊
+### Task 2: Trigger, monitor, and analyze the user profile data pipeline
 
 I ran and analyzed the pipeline.
 
@@ -145,7 +145,7 @@ I ran and analyzed the pipeline.
 
 I triggered the pipeline now, monitored it in the Monitor hub, viewed activity runs and data flow details, analyzed performance metrics.
 
-**Important: Pause your SQL pool** ⏸️
+**Important: Pause your SQL pool**
 
 I paused the SQL pool to free up resources: In Manage hub, selected SQL pools, hovered over SQLPool01, selected pause, and confirmed.
 
