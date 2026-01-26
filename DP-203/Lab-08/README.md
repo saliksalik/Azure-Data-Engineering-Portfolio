@@ -31,11 +31,16 @@ I noted that certain setup warnings could be ignored, such as errors related to 
 3. Replaced the default code with the provided JSON, ensuring the correct suffix was used for Azure resources.
 4. Saved the data flow and verified its configuration.
 
+![Completed Data Flow](user-profiles-data-flow.png)
+
 ### Task 2: Create pipeline
 
 1. Created a new integration pipeline named `User Profiles to Datalake`.
 2. Added a Data Flow activity to the pipeline canvas and configured it to use the `user_profiles_to_datalake` data flow.
 3. Published the pipeline to save the changes.
+
+![Pipeline Data Flow General](pipeline-data-flow-general-datalake.png)
+![Pipeline Data Flow Settings](pipeline-user-profiles-datalake-data-flow-settings.png)
 
 ### Task 3: Trigger the pipeline
 
@@ -49,13 +54,23 @@ I noted that certain setup warnings could be ignored, such as errors related to 
 1. Navigated to the Data hub and loaded data from the `top-products` folder into a new notebook.
 2. Named the notebook `Calculate Top 5 Products` and attached it to the `SparkPool01` Spark pool.
 3. Updated the file path to include all Parquet files in the folder and ran the notebook.
+
+![Attach to Spark Pool](notebook-top-products-attach-pool.png)
+![File Path Highlighted](notebook-top-products-filepath.png)
+
 4. Created additional code cells to process the data and calculate the top 5 products for each user and overall.
+
+![Cell Results Displayed](notebook-top-products-cell1results.png)
+![Top Preferred DataFrame](notebook-top-products-top-preferred-df.png)
+![Top Five Preferred Products](notebook-top-products-top-5-preferred-output.png)
 
 ### Task 2: Add the Notebook to the pipeline
 
 1. Added the notebook to the existing `User Profiles to Datalake` pipeline as a new Notebook activity.
 2. Configured the Notebook activity to use the `runId` parameter, dynamically set to the pipeline run ID.
 3. Published the updated pipeline.
+
+![Pipeline Run ID](pipeline-run-id.png)
 
 ### Task 3: Run the updated pipeline
 
