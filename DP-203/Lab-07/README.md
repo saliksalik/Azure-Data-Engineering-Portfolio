@@ -48,6 +48,12 @@ The Mapping Data Flow we will build will write user purchase data to a dedicated
 
 I navigated to the Develop hub in Synapse Analytics Studio. In the + menu, I selected SQL script. In the toolbar menu, I connected to the SQLPool01 database. In the query window, I replaced the script with the code to create the UserTopProductPurchases table, then ran it. I repeated the process to create the CampaignAnalytics table.
 
+**Screenshots:**
+![Connection Setup](Lab7_Ex1_Task1_Connection_Setup.png)
+![SQL Pool Online](Lab7_Ex1_Task1_SQLPool_Online.png)
+![Table 1 Success](Lab7_Ex1_Task1_Table1_Success.png)
+![Table 2 Success](Lab7_Ex1_Task1_Table2_Success.png)
+
 ### Task 2: Create linked service 🔗
 
 Azure Cosmos DB is one of the data sources that will be used in the Mapping Data Flow. Tailwind Traders has not yet created the linked service.
@@ -71,6 +77,9 @@ I created a dataset for the poorly formatted CSV file.
 #### How I Did It
 
 In the Data hub, I selected + Integration dataset, chose Azure Data Lake Storage Gen2, selected DelimitedText format, configured the path to the CSV file, left first row as header unchecked, imported schema, reviewed settings, previewed data, and published all.
+
+**Screenshot:**
+![CSV Preview](Screenshot%202026-01-25%20135656.png)
 
 ### Task 5: Create campaign analytics data flow 🌊
 
